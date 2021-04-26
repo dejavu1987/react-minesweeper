@@ -12,6 +12,7 @@
   flex-direction: column;
   margin: 0 auto;
 }
+
 .col {
   font-weight: bold;
   height: 30px;
@@ -40,6 +41,10 @@
 }
 .col.color-5 {
   color: brown;
+}
+
+.col.color-💣 {
+  background: red;
 }
 
 .level-select {

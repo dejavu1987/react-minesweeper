@@ -15,6 +15,19 @@ export default function Minesweeper({ level }) {
     setCellStates([]);
   }, [level]);
 
+  const handleCellClick = (x, y) =>
+    setCellStates({
+      ...cellStates,
+      [`${x},${y}`]: CELL_OPEN
+    });
+
+  const handleCellContextMenu = (x, y) => {
+    setCellStates({
+      ...cellStates,
+      [`${x},${y}`]: CELL_FLAGGED
+    });
+  };
+
   return (
     <div className="minesweeper">
       <h4>💣 {totalMines}</h4>
@@ -26,22 +39,14 @@ export default function Minesweeper({ level }) {
                 className={`col color-${cell} ${
                   !cellStates[`${x},${y}`] ? "not-open" : ""
                 }`}
-                onClick={() =>
-                  setCellStates({
-                    ...cellStates,
-                    [`${x},${y}`]: CELL_OPEN
-                  })
-                }
+                onClick={() => handleCellClick(x, y)}
                 onContextMenu={(e) => {
                   e.preventDefault();
-                  setCellStates({
-                    ...cellStates,
-                    [`${x},${y}`]: CELL_FLAGGED
-                  });
+                  handleCellContextMenu(x, y);
                 }}
               >
                 {cellStates[`${x},${y}`] &&
-                  (cellStates[`${x},${y}`] === CELL_OPEN ? cell : "🔒")}
+                  (cellStates[`${x},${y}`] === CELL_OPEN ? cell : "📍")}
               </div>
             ))}
           </div>

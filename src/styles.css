@@ -1,0 +1,43 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  margin: 0 auto;
+}
+.board {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.col {
+  font-weight: bold;
+  height: 30px;
+  width: 30px;
+  border: 1px solid gray;
+  box-sizing: border-box;
+  padding: 5px;
+  background: rgb(214, 214, 214);
+}
+
+.col.color-2 {
+  color: green;
+}
+.col.color-1 {
+  color: blue;
+}
+.col.color-3 {
+  color: red;
+}
+.col.color-4 {
+  color: purple;
+}
+.col.color-5 {
+  color: brown;
+}
+
+.level-select {
+  width: 50px;
+}

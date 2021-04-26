@@ -16,10 +16,14 @@
   font-weight: bold;
   height: 30px;
   width: 30px;
-  border: 1px solid gray;
+  border: 1px solid rgb(167, 166, 166);
   box-sizing: border-box;
   padding: 5px;
   background: rgb(214, 214, 214);
+}
+
+.col.not-open {
+  border: 3px outset rgb(231, 231, 231);
 }
 
 .col.color-2 {

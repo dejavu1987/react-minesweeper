@@ -58,3 +58,9 @@ h1 {
 .level-select {
   width: 50px;
 }
+
+.fork-link {
+  position: fixed;
+  left: 0;
+  top: 0;
+}

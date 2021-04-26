@@ -1,14 +1,13 @@
-import "./styles.css";
-import Minesweeper from "./Minesweeper";
-import { useState } from "react";
+import './styles.css';
+import Minesweeper from './Minesweeper';
+import { useState } from 'react';
 
 export default function App() {
   const [level, setLevel] = useState(1);
   return (
     <div className="App">
-      <h1>Minesweeper</h1>
       <label htmlFor="">
-        Select Level:{" "}
+        Select Level:{' '}
         <input
           className="level-select"
           onChange={(e) => setLevel(e.target.value)}

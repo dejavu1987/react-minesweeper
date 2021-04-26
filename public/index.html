@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<meta name="theme-color" content="#000000">
-	<!--
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="theme-color" content="#000000" />
+    <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
     -->
-	<link rel="manifest" href="%PUBLIC_URL%/manifest.json">
-	<link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-	<!--
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -20,15 +22,14 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-	<title>React App</title>
-</head>
+    <title>Minesweeper using ReactJs</title>
+  </head>
 
-<body>
-	<noscript>
-		You need to enable JavaScript to run this app.
-	</noscript>
-	<div id="root"></div>
-	<!--
+  <body>
+    <h1>Minesweeper using ReactJs</h1>
+    <noscript> You need to enable JavaScript to run this app. </noscript>
+    <div id="root"></div>
+    <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
 
@@ -38,6 +39,37 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-</body>
-
+    <div class="container">
+      <hr />
+      <h2>Minesweeper Rules</h2>
+      <ol>
+        <li>Mines are randomly placed in the matrix</li>
+        <li>Numbered cells have mines around them, equal to the number</li>
+        <li>No mines around empty cells</li>
+        <li>User can right click a cell to flag as a mine.</li>
+        <li>User can left click a cell to open the cell</li>
+        <li>The game is over if a cell with mine is opened</li>
+      </ol>
+      <h2>Challenges</h2>
+      <ol>
+        <li>Generating numbered cells</li>
+        <li>Randomly generating mines</li>
+        <li>Managing states of each cell</li>
+        <li>
+          Recursively open neighboring cells when opened cell is an empty one
+        </li>
+      </ol>
+      <hr />
+      <h2>Generating numbered cells</h2>
+      <p>TBD</p>
+      <h2>Randomly generating mines</h2>
+      <p>TBD</p>
+      <h2>Managing states of each cell</h2>
+      <p>TBD</p>
+      <h2>
+        Recursively open neighboring cells when opened cell is an empty one
+      </h2>
+      <p>TBD</p>
+    </div>
+  </body>
 </html>

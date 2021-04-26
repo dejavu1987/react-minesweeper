@@ -3,7 +3,7 @@ import Minesweeper from './Minesweeper';
 import { useState } from 'react';
 
 export default function App() {
-  const [level, setLevel] = useState(1);
+  const [level, setLevel] = useState(4);
   return (
     <div className="App">
       <label htmlFor="">
